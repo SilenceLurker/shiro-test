@@ -11,9 +11,13 @@ import org.apache.shiro.subject.Subject;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
 
 import xyz.silencelurker.test.shiro.realm.test.MyRealm;
 
+/**
+ * @author Silence_Lurker
+ */
 @SpringBootTest
 class ShiroApplicationTests {
 

@@ -15,4 +15,5 @@ public interface UserInfoRepository extends JpaRepository<UserInfo, Long> {
      * @return
      */
     UserInfo findByUsername(String username);
+
 }

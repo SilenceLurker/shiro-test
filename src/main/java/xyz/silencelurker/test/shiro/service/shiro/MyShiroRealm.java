@@ -8,7 +8,6 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.util.ByteSource;
 
 import jakarta.annotation.Resource;
 import xyz.silencelurker.test.shiro.entity.SysPermission;
@@ -56,7 +55,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(
                 userInfo,
                 userInfo.getPassword(),
-                ByteSource.Util.bytes(userInfo.getSalt()),
+                // ByteSource.Util.bytes(userInfo.getSalt()),
                 getName());
 
         return simpleAuthenticationInfo;

@@ -1,6 +1,7 @@
 package xyz.silencelurker.test.shiro.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
@@ -24,7 +25,7 @@ public class SysPermission {
     private String description;
     private String url;
 
-    @ManyToMany
-    @JsonIgnoreProperties(value = { "permissions" })
-    private List<SysRole> roles;
+    // @ManyToMany(fetch = FetchType.LAZY)
+    // @JsonIgnoreProperties(value = { "permissions" })
+    // private List<SysRole> roles;
 }
