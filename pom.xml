@@ -85,16 +85,6 @@
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
 			<classifier>jakarta</classifier>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.shiro</groupId>
-					<artifactId>shiro-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.shiro</groupId>
-					<artifactId>shiro-web</artifactId>
-				</exclusion>
-			</exclusions>
 			<version>2.0.0</version>
 		</dependency>
 
@@ -102,13 +92,7 @@
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-web</artifactId>
 			<classifier>jakarta</classifier>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.shiro</groupId>
-					<artifactId>shiro-core</artifactId>
-				</exclusion>
-			</exclusions>
-			<version>[2,3)</version>
+			<version>2.0.0</version>
 		</dependency>
 
 		<dependency>
